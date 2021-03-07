@@ -11,7 +11,6 @@ function Light(props) {
 }
 
 Light.propTypes = {
-	color: PropTypes.string,
 	setColor: PropTypes.func,
 	value: PropTypes.string
 };

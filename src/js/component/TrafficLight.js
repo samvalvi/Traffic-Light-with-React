@@ -1,40 +1,27 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Light from "./Light";
 import PropTypes from "prop-types";
 
 function TrafficLight(props) {
 	return (
-		<div className="container">
-			<div className="row">
-				<div className="trafficTop"></div>
+		<Fragment>
+			<div className="trafficTop"></div>
+			<div className="container">
+				<div className="row">
+					<Light value="red" setColor={props.setColor} />
+				</div>
+				<div className="row">
+					<Light value="yellow" setColor={props.setColor} />
+				</div>
+				<div className="row">
+					<Light value="green" setColor={props.setColor} />
+				</div>
 			</div>
-			<div className="row">
-				<Light
-					value="red"
-					color={props.color}
-					setColor={props.setColor}
-				/>
-			</div>
-			<div className="row">
-				<Light
-					value="yellow"
-					color={props.color}
-					setColor={props.setColor}
-				/>
-			</div>
-			<div className="row">
-				<Light
-					value="green"
-					color={props.color}
-					setColor={props.setColor}
-				/>
-			</div>
-		</div>
+		</Fragment>
 	);
 }
 
 TrafficLight.propTypes = {
-	color: PropTypes.string,
 	setColor: PropTypes.func
 };
 
