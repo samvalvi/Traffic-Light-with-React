@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function Light(props) {
 	return (
 		<div
-			className="circle"
+			className="light-circle"
 			value={props.value}
 			onClick={() => props.setColor(props.value)}></div>
 	);
