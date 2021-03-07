@@ -6,7 +6,7 @@ export function Home() {
 	const [color, setColor] = useState("");
 
 	useEffect(() => {
-		console.log(color);
+		console.log(`Light: ${color}`);
 	});
 
 	return (
