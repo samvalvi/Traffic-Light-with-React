@@ -1,24 +1,18 @@
-import React, {Fragment, useState} from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import TrafficLight from "./TrafficLight";
 
 //create your first component
 function Home() {
-    const [color, setColor] = useState('');
+	const [color, setColor] = useState("");
 
-    const updateTrafficLight = event => {
-        setColor(
-            color = e.target.value
-        )
-    }
-
-    useEffect(() => {
-        Console.log(color);
-    })
+	useEffect(() => {
+		console.log(color);
+	});
 
 	return (
-        <Fragment>
-            <TrafficLight color={color} updateTrafficLight={updateTrafficLight}/>
-        </Fragment>
+		<Fragment>
+			<TrafficLight color={color} setColor={setColor} />
+		</Fragment>
 	);
 }
 
