@@ -8,7 +8,11 @@ function TrafficLight(props) {
 			<div className="trafficTop"></div>
 			<div className="container">
 				<div className="row">
-					<Light value="red" setColor={props.setColor} />
+					<Light
+						className="red"
+						value="red"
+						setColor={props.setColor}
+					/>
 				</div>
 				<div className="row">
 					<Light value="yellow" setColor={props.setColor} />

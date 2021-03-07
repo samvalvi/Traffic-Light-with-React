@@ -5,6 +5,7 @@ function Light(props) {
 	return (
 		<div
 			className="light-circle"
+			id={props.value}
 			value={props.value}
 			onClick={() => props.setColor(props.value)}></div>
 	);
