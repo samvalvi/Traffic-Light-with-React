@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Light(props) {
+function Light({ setColor, value }) {
 	return (
 		<div
 			className="light-circle"
-			id={props.value}
-			value={props.value}
-			onClick={() => props.setColor(props.value)}></div>
+			id={value}
+			value={value}
+			onClick={() => setColor(value)}></div>
 	);
 }
 
