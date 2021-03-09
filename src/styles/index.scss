@@ -27,22 +27,37 @@
     margin-left: 80px;
 }
 
-.light-circle {
+/*.light-circle {
+    margin: 10px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}*/
+
+#red {
+    background-color: #DC2626;
     margin: 10px auto;
     width: 80px;
     height: 80px;
     border-radius: 50px;
 }
 
-#red {
-    background-color: #DC2626;
-}
-
 #yellow {
     background-color: #FBBF24;
+    margin: 10px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
 }
 
 #green {
     background-color: #059669;
+    margin: 10px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
 }
 
+.selected {
+    box-shadow: #f8ffcc 0 0 50px 20px;
+}

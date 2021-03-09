@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Light({ setColor, value }) {
+export function Light({ className, setColor, value }) {
 	return (
 		<div
-			className="light-circle"
+			className={className}
 			id={value}
 			value={value}
 			onClick={() => setColor(value)}></div>
@@ -12,8 +12,7 @@ function Light({ setColor, value }) {
 }
 
 Light.propTypes = {
+	className: PropTypes.string,
 	setColor: PropTypes.func,
 	value: PropTypes.string
 };
-
-export default Light;
