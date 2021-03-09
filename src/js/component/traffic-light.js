@@ -16,7 +16,6 @@ export function TrafficLight() {
 					<Light
 						value="red"
 						className={color === "red" ? "selected" : null}
-						color={color}
 						setColor={setColor}
 					/>
 				</div>
@@ -24,7 +23,6 @@ export function TrafficLight() {
 					<Light
 						value="yellow"
 						className={color === "yellow" ? "selected" : null}
-						color={color}
 						setColor={setColor}
 					/>
 				</div>
@@ -32,7 +30,6 @@ export function TrafficLight() {
 					<Light
 						value="green"
 						className={color === "green" ? "selected" : null}
-						color={color}
 						setColor={setColor}
 					/>
 				</div>
